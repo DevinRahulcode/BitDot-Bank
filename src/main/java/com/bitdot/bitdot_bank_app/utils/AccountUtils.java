@@ -14,6 +14,13 @@ public class AccountUtils {
     public static final String ACCOUNT_NOT_EXISTS_MESSAGE="User provided is not in our database.";
     public static final String ACCOUNT_FOUND_CODE = "004";
     public static final String ACCOUNT_FOUND_SUCCESS = "Account found";
+    public static final String ACCOUNT_CREDIT_SUCCESS_CODE = "005";
+    public static final String ACCOUNT_CREDIT_SUCCESS_MESSAGE = "Amount Credited!!!";
+    public static final String INSUFFICINT_AMOUNT_CODE = "006";
+    public static final String INSUFFICINT_AMOUNT_MESSAGE = "Please check your account balance";
+
+    public static final String SUFFICINT_AMOUNT_CODE = "007";
+    public static final String SUFFICINT_AMOUNT_MESSAGE = "Please Collect your Money";
 
     public static String generateAccountNumber(){
 

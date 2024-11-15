@@ -1,6 +1,7 @@
 package com.bitdot.bitdot_bank_app.controller;
 
 import com.bitdot.bitdot_bank_app.dto.BankResponse;
+import com.bitdot.bitdot_bank_app.dto.CreditDebitRequest;
 import com.bitdot.bitdot_bank_app.dto.EnquiryRequest;
 import com.bitdot.bitdot_bank_app.dto.UserRequest;
 import com.bitdot.bitdot_bank_app.service.impl.UserService;
@@ -26,5 +27,15 @@ public class UserController {
     @GetMapping("nameEnquiry")
     public String nameEnquiry(@RequestBody EnquiryRequest request){
         return userService.nameEnquiry(request);
+    }
+
+    @PostMapping("credit")
+    public BankResponse creditAccount(@RequestBody CreditDebitRequest request){
+        return userService.creaditAccount(request);
+    }
+
+    @PostMapping("debit")
+    public BankResponse debitAccount(@RequestBody CreditDebitRequest request){
+        return userService.debitAccount(request);
     }
 }
